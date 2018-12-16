@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,900&subset=cyrillic');
+
+/*general*/
+html {
+    margin: 0;
+    min-height: 100%;
+    font-size: 16px;
+    font-family: 'Merriweather', serif;
+    color: #000;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+main {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex: auto;
+}
+
+main:after {
+    z-index: 1;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+
+}
+
+main video {
+    position: absolute;
+    z-index: 0;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+:root video {
+    overflow: hidden;   
+    width: auto;
+    height: auto;
+
+}
+
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 0.6em;
+    line-height: 0.8em;
+    font-weight: 900;
+}
+
+section,
+footer {
+    box-sizing: border-box;
+    z-index: 2;
+    width: 100%;
+    clear: both;
+    position: relative;
+}
+
+
+
+.white_btn {
+    margin: auto;
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-weight: bold;
+    background: transparent;
+    color: #fff;
+    -webkit-appearance: none;
+    cursor: pointer;
+    border-radius: 0px;
+    border: 2px solid #fff;
+}
+
+a.white_btn {
+    text-decoration: none;
+}
+
+.white_btn:hover,
+.white_btn:focus {
+    opacity: 0.8;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+
+
+/*about*/
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.about .container {
+    padding-bottom: 2em;
+    max-width: 600px;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+/*footer*/
+
+    
+footer .container {
+    border-top: 1px solid #fff;
+    padding: 15px 0 15px;
+}
+
+footer .copyright {
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    font-size: 12px;
+    margin: auto;
+    display: block;
+}
